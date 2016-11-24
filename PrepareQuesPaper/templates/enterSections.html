@@ -1,0 +1,40 @@
+<div ng-controller = 'sectionEntryCtrl'>
+
+	<h1 style="text-align:center" class="gradient-text">
+		Create Sections Here
+	</h1>
+	<div style="text-align:center">
+		<button class="example" ng-click='creatingSection()'>
+		<i class="material-icons right">create</i>
+			Create Section
+		</button>
+		<div style="margin-top:10px">
+			<div style="border-radius:5px;" ng-repeat="x in sectionNameList" class="collection">
+				<a href="#/EnterQuestions/{{x.Name}}" class="collection-item active" style="color: black;background-color: white;font-size:30px;font-weight:bold;text-align:left">{{x.Name}}
+				<span class="badge black" style="font-size:15px;color:white">No.of Questions:{{x.Questions.length}}</span></a>
+				
+			</div>		
+		</div>
+		<div ng-show='addsection' >
+			<input style="color:black;font-size:25px;font-weight:bold;background-color:#eceff1" type='textarea' ng-model="sectionName"><br><br>
+			<button style="font:italic bold 18px Georgia, serif" class="example" ng-click='createSec()'><i style="color:black" class="material-icons right">add_circle_outline</i> Add Section</button>
+			&nbsp&nbsp&nbsp
+			<button style="font:italic bold 18px Georgia, serif" class="example"  ng-click="removeSec()">
+			<i style="color:black" class="material-icons right">remove_circle_outline</i>Remove</button><br><br>
+		</div>
+			<button style="font:italic bold 18px Georgia, serif" class="example" ng-click="viewpaper()">ViewCompletePaper</button>
+		<div>
+		
+		<div ng-show="detailsofpaper">
+			<input style="margin-left:20%;width:20%; padding:30px;float:left;color:white;font-size:20px" type = 'number' ng-model= 'totalMarks' placeholder = 'Total Marks'>
+			<input style="width:20%; padding:30px;float:left;margin-left:20px;color:white;font-size:20px" type = 'number' ng-model= 'duration' placeholder = 'Duration'>
+			<button style="font:italic bold 18px Georgia, serif;margin-right: 20%;margin-top: 5%;" class="example" ng-click="opencompletepaper()">Done</button>
+		</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+

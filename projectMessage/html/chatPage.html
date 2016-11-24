@@ -1,0 +1,60 @@
+<div class= "chatbody" ng-controller = "friendCtrl">
+			<div class="friendlistblock" style='float:left' >
+			<!--chat and friends list div-->
+				<div>
+					<div>
+						<button class='button button-small cards' ng-style='friendlistBG' ng-click='friendslist()'>Friends</button>
+						<button class='button button-small cards' ng-style='chatlistBG' ng-click='chatlist()'>Chats</button>
+					</div>
+				</div>
+				<div>
+					<div ng-show='friendsOrChat'>
+						<!--list of friends or all users through ng-repeat-->
+						<div >
+							<button class="friendchatbutton" ng-repeat='friendList in friend' ng-click="openTextBox(friendList.mobileNo)">
+							<i class="em em-smile emoji"></i><span style="padding-left:20px;float:left">{{friendList.name}}<br>{{friendList.mobileNo}}</span></button></br>
+						</div>
+					</div>	
+
+					<div ng-hide='friendsOrChat'>
+						<!--list of chat through ng-repeat-->
+						<div>
+							<button class="friendchatbutton" ng-repeat='chat in chats' ng-click="openTextBox(chat.mobileNo)"><i class="em em-smile emoji"></i><span style="padding-left:20px;float:left">{{chat.mobileNo}}<br>{{chat.messages[((chat.messages).length)-1].message}}</span></button></br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="conversationbody scroll" style='float:left'>
+				<!--chat block-->
+				<div class="header">
+				<!--user details-->
+				<i style="padding:15px;"class="em em-hand"></i>
+				<span class="username">{{To.userName}}</span> <span class="usernumber">MobileNo :{{To.mobileNo}}</span>
+				
+				</div>
+				<div class="scrollbar" id="scrollbar-custom" ng-show="Display">
+				<div ng-repeat ="messages in Messages">
+					<div class="messagecontainer" >
+					 <!--conversationpart-->
+						<h5  ng-if="messages.Token === 'send'" style="float:left" class="reccontainer">{{messages.message}}</h5></br>
+					</div>
+					<div class="messagecontainer" >
+					 <!--conversationpart-->
+						<h5 ng-if="messages.Token === 'receiver'" style="float:right" class="sendcontainer">{{messages.message}}</h5></br>
+					</div>
+				</div>
+				</div>
+				<div class="footer" ng-controller = "conversationCtrl">
+				<!--text box to send message class=textboxcontainer-->
+					<div>
+						<input autofocus type="textarea" class='textboxtype' placeholder="Type Your Message" ng-model="message" ng-keyup="$event.keyCode == 13 && sendMessage(To.mobileNo)">
+	
+						<!--button to send message-->
+						<button class="sendbutton" ng-click="sendMessage(To.mobileNo)" "><i class="material-icons"style="color:black;font-size:30px">send</i>
+						</button>
+					
+					</div>
+				</div>
+				
+			</div>
+		  </div>

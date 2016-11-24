@@ -1,0 +1,44 @@
+<div ng-controller = "questionEntryCtrl" >
+	<div ng-show='addquestion' style=";margin-left:40%">
+		<button class="example" ng-click='addQuestion()'>Add New Question</button>
+	</div>
+	<div class="questionContainer" ng-show='question'>
+		
+		<div class="container"style="text-align:center; width:500px;height:300px;margin-top:5%;">
+			<h4 style="text-align:left">Enter Your Question :</h4>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea placeholder="Enter Your Question Here" style="font-size:30px"class="materialize-textarea"ng-model='ques'></textarea>
+							 <div style="font-weight:bold">Total Words: <span ng-bind="countOfWords(ques)"></span></div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div>
+				<input type='text' placeholder="Enter Your Options Here" style="font-size:30px" ng-model='option'>
+				<div>
+					<button  class="example" style="font:italic bold 18px Georgia, serif" ng-click='addOption()'><i style="color:black" class="material-icons right">add_circle_outline</i>AddOption</button>
+					<button  class="example"style="font:italic bold 18px Georgia, serif" ng-click="remove(option)"><i style="color:black" class="material-icons right">remove_circle_outline</i>Remove</button><br><br>
+				</div>
+			</div>
+			<div>
+				<input type='text' placeholder = "Enter Correct Option" style="font-size:30px" ng-model='answer'>
+			</div>
+			<div>
+				<button class="example" style="font:italic bold 18px Georgia, serif"ng-click='saveQuestion()'>Save Question
+				<i class="material-icons right">save</i></button>
+				<button class="example" style="font:italic bold 18px Georgia, serif"ng-click='saveQuestions ()'>SaveAll</button>	
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center">
+		<div class="optionContainer" style="height:auto">
+			<ol>
+				<li style="padding:30px;font-weight:bold;font-size:25px" ng-repeat = 'opt in options'>{{opt}}</li>
+			</ol>
+		</div>
+		
+	</div>
+</div>

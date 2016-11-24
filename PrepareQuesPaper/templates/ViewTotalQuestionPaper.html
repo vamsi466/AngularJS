@@ -1,0 +1,32 @@
+<!-- controls view of total questions paper-->
+
+<div ng-controller = 'viewQuesPaperCtrl'>
+	
+	<h3>Duration : {{questionPaper.Duration}}<span style="float : right">Total Marks : {{questionPaper.TotalMarks}}</span></h3>
+	<!-- repeat the array of sections in question paper -->
+	<div ng-repeat = 'section in questionPaper.sections'>
+	
+		<!-- header to show the name of that section -->
+		<div style="text-align:center">
+			<span style="font:italic bold 25px Georgia">{{section.Name}} Section</span>
+		</div>
+		
+		<!-- repeat the question in the section with options as radio buttons-->
+		<div class = "container">
+		<div class = "card3" ng-repeat='ques in section.Questions' ng-style='cardStyle'>
+			<p><span>{{ques.ID}}. </span>{{ques.Question}}</p>
+			<label ng-repeat = 'option in ques.Options'>
+			<input type="radio" ng-model = 'ques.ans' value="{{$index+1}}" ng-click="radioClick(ques)">{{option}}<br>
+			</label>
+		</div>
+		
+		</div>
+	</div>
+	<!-- button to go back to the creating question paper page, home to create another question paper, download is for download the question paper json file -->
+	<div style = "text-align : center">
+		<input style="font:italic bold 18px Georgia" class="example"type= "button" value="Home" ng-click="home()">
+		<input style="font:italic bold 18px Georgia"class="example" type= "button" value="Back" ng-click="back()">
+		<input style="font:italic bold 18px Georgia"class="example" type= "button" value="Download" ng-click="download()">
+		
+	</div>
+</div>
