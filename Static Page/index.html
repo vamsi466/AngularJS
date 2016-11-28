@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee List</title>
+		<!-- angular min file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!-- bootstrap min file -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      .topSpacing{
+        margin-top:30px;
+      }
+      .imageDimensions{
+        height:200px;
+        width:100%;
+      }
+      .card{
+        border-radius:none !important;
+      }
+     
+      .col-xs-6{
+        padding:0px !important;
+        
+      }
+      .list-group {
+         
+          padding:0px !important;
+      }
+      #image1 {
+          height:246px !important;
+        }
+     
+     
+    </style>
+	</head>
+  <body ng-app="myDetailsApp">
+
+    <div class="topSpacing">
+      <div ng-controller = "selfDetailsCtrl" class=" card col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-6 col-xs-offset-3">
+            <img class="card-img-top hidden-xs hidden-sm imageDimensions"  src="Images/pic.jpg" alt="Card image cap">
+            <div class=" card-block">
+                <ul class="list-group">
+                  <li class="list-group-item active">Hai Every One, This is</li>
+                  <div class="col-md-12 col-sm-6 col-xs-6">
+                    <li class="list-group-item">{{selfDetails.Name}}</li>
+                    <li class="list-group-item"><span class="">Date Of Birth</span> - {{selfDetails.DOB}}</li>
+                    <li class="list-group-item">Birth Place - {{selfDetails.Born}}</li>
+                    <li class="list-group-item">Hobbies - {{selfDetails.Hobbies}}</li>
+                    <li class="list-group-item">Interests - {{selfDetails.Interests}}</li>
+                    <li class="list-group-item">Profession - {{selfDetails.Profession}}</li>
+                  </div>
+                  <img  id="image1" class="visible-xs visible-sm col-xs-6" src="Images/pic.jpg">
+                </ul> 
+            </div>
+        
+        </div>
+    </div>    
+    <script src="JS/selfDetails.js"></script>
+  </body>
+</html>
