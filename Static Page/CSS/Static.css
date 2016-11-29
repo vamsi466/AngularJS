@@ -1,0 +1,23 @@
+.topSpacing{
+        margin-top:30px;
+      }
+.imageDimensions{
+  height:200px;
+  width:100%;
+}
+.card{
+  border-radius:none !important;
+}
+
+.col-xs-6{
+  padding:0px !important;
+
+}
+.list-group {
+
+    padding:0px !important;
+}
+#image1 {
+    height:246px !important;
+  }
+     

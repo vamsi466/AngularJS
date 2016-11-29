@@ -6,32 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<!-- bootstrap min file -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>
-      .topSpacing{
-        margin-top:30px;
-      }
-      .imageDimensions{
-        height:200px;
-        width:100%;
-      }
-      .card{
-        border-radius:none !important;
-      }
-     
-      .col-xs-6{
-        padding:0px !important;
-        
-      }
-      .list-group {
-         
-          padding:0px !important;
-      }
-      #image1 {
-          height:246px !important;
-        }
-     
-     
-    </style>
+		<link rel="stylesheet" href="CSS/Static.css">
 	</head>
   <body ng-app="myDetailsApp">
 
@@ -49,12 +24,11 @@
                     <li class="list-group-item">Interests - {{selfDetails.Interests}}</li>
                     <li class="list-group-item">Profession - {{selfDetails.Profession}}</li>
                   </div>
-                  <img  id="image1" class="visible-xs visible-sm col-xs-6" src="Images/pic.jpg">
-                </ul> 
+                  <img  id="image1" class="visible-xs visible-sm col-xs-6" src="Images/pic1.jpg">
+                </ul>
             </div>
-        
         </div>
-    </div>    
+    </div>
     <script src="JS/selfDetails.js"></script>
   </body>
 </html>
