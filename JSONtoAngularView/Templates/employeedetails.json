@@ -1,0 +1,78 @@
+[
+    {
+      "ID": "30024",
+      "Name": "NagaLatha",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000,
+      "Picture":
+    },
+    {
+      "ID": "30025",
+      "Name": "Santoshi",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+
+    {
+      "ID": "30026",
+      "Name": "Gnaneshwari",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30027",
+      "Name": "Raghavendra",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 13500
+    },
+
+    {
+      "ID": "30028",
+      "Name": "Namratha",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+
+    {
+      "ID": "30029",
+      "Name": "Vaishnavi",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30030",
+      "Name": "Praneeth",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 13500
+    },
+
+    {
+      "ID": "30031",
+      "Name": "Varudhini",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30032",
+      "Name": "Deepika",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30033",
+      "Name": "VamsiRam",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 13500,
+      "img_path":"img_01"
+    }
+  ]

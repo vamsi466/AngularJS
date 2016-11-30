@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="jsonajaxcall">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--including all the files required css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/jsonajaxcall.css">
+	</head>
+  <body>
+
+
+     <div ng-controller="jsontoajaxController">
+
+       <div ng-repeat = "employee in employees" class="col-md-4">
+         <ajax-call-directive></ajax-call-directive>
+       </div>
+     </div>
+     <!-- <div ajax-call-directive>
+     <img ng-src="folder/{{x.img_path}}">
+
+     </div> -->
+
+    <!--included the js files requored-->
+     <script src="JS/angular.min.js"></script>
+     <script src="JS/jsonajax.js"></script>
+
+	</body>
+</html>
