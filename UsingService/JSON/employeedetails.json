@@ -1,0 +1,44 @@
+{
+  "employeedetails":
+  [
+    {
+      "ID": "30024",
+      "Name": "NagaLatha",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30025",
+      "Name": "Santoshi",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+
+    {
+      "ID": "30026",
+      "Name": "Gnaneshwari",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    },
+    {
+      "ID": "30027",
+      "Name": "Raghavendra",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 13500
+    },
+
+    {
+      "ID": "30028",
+      "Name": "Namratha",
+      "Designation": "Trainee",
+      "Experience": "10Days",
+      "Salary": 20000
+    }
+
+
+  ]
+}

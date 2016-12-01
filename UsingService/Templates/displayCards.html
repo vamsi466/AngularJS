@@ -1,0 +1,28 @@
+<div ng-class='(employee.Salary > 15000) ? "panel panel-primary" : "panel panel-danger"'>
+  <div class="panel-heading">
+    <h4>{{employee.ID}}</h4>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4"><strong>ID.No:</strong></div>
+      <div class="col-sm-7">{{employee.ID}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><strong>Name:</strong></div>
+      <div class="col-sm-7">{{employee.Name}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><strong>Experience:</strong></div>
+      <div class="col-sm-7">{{employee.Experience}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><strong>Salary:</strong></div>
+      <div class="col-sm-7">{{employee.Salary}}</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><strong>Designation:</strong></div>
+      <div class="col-sm-7">{{employee.Designation}}</div>
+    </div>
+    <button class="col-md-offset-8 btn btn-danger" ng-click ='delete()'>DELETE</button>
+  </div>
+</div>
