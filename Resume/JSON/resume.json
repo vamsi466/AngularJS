@@ -1,0 +1,59 @@
+{
+  "resumedetails": {
+    "name": "M R S Vamsi Gupta",
+    "image":"photo.jpg",
+    "education": [
+        {
+          "course": "Tenth",
+          "institute": "Little Angels School",
+          "year":"2010",
+          "aggregate": "90%"
+        },
+        {
+          "course": "Intermediate",
+          "institute": "Narayana",
+          "year":"2012",
+          "aggregate": "90%"
+        },
+        {
+          "course": "B-tech",
+          "institute": "KIET College",
+          "year":"2016",
+          "aggregate": "66%"
+        }],
+    "technicalSkills":
+        [
+          "C-Language",
+          "JavaScript",
+          "AngularJS"
+        ],
+    "achievements":
+        [
+          "Won 3times University Champion Ship in KHO-KHO",
+          "District Player in Cricket"
+        ],
+    "hobbies":
+        [
+          "Cricket",
+          "Chess",
+          "Painting"
+        ],
+    "dob": "13-08-1994",
+    "mail": "ramsumanth730@gmail.com",
+    "address":
+         {
+          "houseNo": "18-53",
+          "street": "P.M.Palem",
+          "city": "Visakhapatnam",
+          "zip": "530041"
+         },
+    "languagesKnown":
+        [
+          "Telugu",
+          "Hindi",
+          "English"
+        ],
+    "careerObjective": "To pursue highly challenging position as a technical developer in the sector of Information Technology along with the organizational growth and its social welfare",
+    "phone": "+91-8712333958"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myResume">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--including all the files required css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/staticResume.css">
+
+	</head>
+  <body>
+      <div class="container-fluid col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" ng-controller="resumeDisplay">
+            <div class="row">
+              <div class="col-md-offset-5 col-md-2 col-sm-offset-5 col-sm-2 col-xs-offset-4 col-xs-4">
+                <h2>Resume</h2>
+              </div>
+            </div>
+            <div>
+                <div class=" col-md-6 col-sm-6 col-offset-xs-3 col-xs-12 r">
+                    <img class="col-md-4 col-sm-4 col-xs-4 imageborder" ng-src="Images/{{details.image}}">
+               </div>
+              <!-- <div>
+                <h4>{{details.name}}</h4><br>
+                <div class="row">
+                 <h4 class="col-md-6 col-sm-6 col-xs-12">Mail:ramsumanth730@gmail.com</h4>
+                 <h4 class="col-md-6 col-sm-6 col-xs-12 text-right">Phone:8712333958</div>
+               </div>
+              </div> -->
+              <div class="col-md-6 col-sm-6 col-xs-12 text-right fontsize">
+                <h2>{{details.name}}</h2>
+                <h4><b>Mail.ID:</b>&nbsp{{details.mail}}</h3>
+                <h4><b>Contact.No:</b>&nbsp{{details.phone}}</h3>
+              </div>
+            </div>
+
+          <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+            <career-obj></career-obj>
+          </div>
+
+          <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+            <academics></academics>
+          </div>
+          <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+            <technicalskills></technicalskills>
+          </div>
+          <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+            <achievements></achievements>
+          </div>
+          <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+            <personaldetails></personaldetails>
+          </div>
+      </div>
+       <script src="JS/angular.min.js"></script>
+       <script src="JS/staticResume.js"></script>
+  	</body>
+  </html>
