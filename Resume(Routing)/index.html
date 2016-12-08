@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myResume">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--including all the files required css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/resumeTemplates.css">
+		<link rel="stylesheet" type="text/css" href="CSS/cards.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+		<script src="JS/angular.min.js"></script>
+		<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+		<style>
+			[ng-cloak],[ng\:cloak],[data-ng-cloak],[x-ng-cloak],x-ng-cloak,ng-cloak{
+				display:none!important;
+			}
+		</style>
+	</head>
+  <body ng-cloak >
+      <div class="container-fluid containerPadding" ng-controller="resumeDisplay">
+					<div class="top-spacing" ui-view="mainPart"></div>
+      </div>
+			<!-- <script src="JS/myResume.js"></script> -->
+			<script src="JS/staticResume.js"></script>
+			<script src="JS/routing.js"></script>
+			<script src="JS/format1Directives.js"></script>
+			<script src="JS/format2Directives.js"></script>
+			<script src="JS/format3Directives.js"></script>
+  	</body>
+  </html>

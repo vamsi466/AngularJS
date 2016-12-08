@@ -1,0 +1,23 @@
+<div class="col-sm-3 col-md-3 col-xs-12 affix-sidebar containerPadding top-spacing containerHeight">
+  <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle text-right toggle-index" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand" >Sidebar menu</span>
+        </div>
+      <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav" style="height:100%">
+            <li><a ui-sref="home.verticalNav.default">Format1</a></li><br>
+            <li><a ui-sref="home.verticalNav.format2">Format2</a></li><br>
+            <li><a ui-sref="home.verticalNav.format3">Format3</a></li>
+          </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<div class=" col-md-offset-3 col-sm-offset-3 col-md-9 col-xs-12 col-sm-9"  ng-controller="resumeDisplay" ui-view='bodyPart'></div>
