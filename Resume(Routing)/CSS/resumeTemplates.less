@@ -19,7 +19,7 @@
   font-size: 15px !important;
 }
 .borderTable{
-  border-top:1px solid #3c763d !important;
+  border:1px solid #6f5499 !important;
 }
 .getStartImage{
   background:url("../Images/getStartimage.jpg");
@@ -118,5 +118,54 @@
     position:relative !important;
     height:100% !important;
     border:1px solid white;
+    border-top: none!important;
   }
+}
+@media only screen and (min-width:480px) and (max-width: 768px)  {
+  .responsiveFont{
+      font-size: 5px!important;
+  }
+}
+.resume2headerPanel{
+  // border-bottom:1px double black;
+  border-bottom-style: double;
+  .panelHeading{
+    background-color:#6f5499!important;
+    border-radius:0px !important;
+    .panelTitle{
+      font-size:30px!important;
+      color:white;
+    }
+  }
+  .panelBody{
+    background-color:#c6bcd7!important;
+    ul{
+      list-style-type:none;
+      .inline{
+        float:left !important;
+      }
+    }
+  }
+}
+.panel-default{
+  border:none !important;
+  .panel-heading{
+    background:white!important
+  }
+  .panel-body{
+    table{
+      thead{
+        tr{
+          th{
+            font-size:20px !important;
+            font-weight:bold !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cardleft{
+  margin-left: -15px !important;
 }
