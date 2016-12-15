@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="eventListenerApp">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--including all the files required css-->
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="JS/angular.min.js"></script>
+		<link rel="stylesheet" href="CSS/navigator.css">
+	</head>
+  <body>
+      <div class="container-fluid" ng-controller="eventListenerCtrl">
+      	<div class="col-md-offset-3 col-xs-offset-2 col-sm-offset-3 text-left">
+      		<h2>Come On Lets Navigate This</h2>
+      	</div>
+      	
+		<div class="col-md-6 col-sm-12 col-xs-12" navigator>
+			<div class="card card-block  col-md-4 col-xs-4 col-sm-4 text-center " ng-repeat='box in Boxes'  ng-class='($index == selectedBox) ? "selectedDiv" : "boxDiv"'' ng-click='navigatorFunction($index)' >
+					
+						{{box}}
+					
+			</div> 
+	      	 
+	     </div>
+	     <div class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12">
+	        <h3 style="text-align:center">Key Event Histroy</h3>
+	        <div class = 'history'></div>
+	     </div>
+      </div>
+			<!-- <script src="JS/myResume.js"></script> -->
+			<script src="JS/eventListener.js"></script>
+  </body>
+</html>
