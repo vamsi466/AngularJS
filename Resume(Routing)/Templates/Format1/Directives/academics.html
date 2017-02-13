@@ -3,22 +3,24 @@
   <div class="panel-heading" >
   <h3>Academics</h3>
   </div>
-<table class="table table-responsive table-bordered borderTable">
-    <thead>
-      <tr class="success">
-        <th>Course</th>
-        <th>Year of Passed</th>
-        <th>Institution</th>
-        <th><span class="hidden-xs">Percentage</span><span class="percentagefont visible-xs"><abbr title="Percentage">%</th>
-      </tr>
-    </thead>
-    <tbody ng-repeat="academics in details.education">
-      <tr>
-        <td>{{academics.course}}</td>
-        <td>{{academics.year}}</td>
-        <td>{{academics.institute}}</td>
-        <td>{{academics.aggregate}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="panel-body tablePosition">
+    <table class="table table-responsive table-bordered borderTable">
+        <thead>
+          <tr class="success">
+            <th>Course</th>
+            <th>Year of Passed</th>
+            <th>Institution</th>
+            <th><span class="hidden-xs">Percentage</span><span class="percentagefont visible-xs"><abbr title="Percentage">%</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="academics in details.education">
+          <tr>
+            <td>{{academics.course}}</td>
+            <td>{{academics.year}}</td>
+            <td>{{academics.institute}}</td>
+            <td>{{academics.aggregate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </div>

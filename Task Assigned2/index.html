@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+	<head >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--including all the files required css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Assets/css/font-awesome.css">
+    <link rel="stylesheet" href="Assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="CSS/novoCloud.css">
+	</head>
+  <body ng-app="novoCloud">
+    <!--Logo bar-->
+    <div class="container-fluid">
+			<div >
+			  <logo></logo>
+			</div>
+
+			<div >
+			  <collapse></collapse>
+			</div>
+
+			<div >
+			  <itemsnavbar></itemsnavbar>
+			</div>
+			<div>
+			  <revenueinfo></revenueinfo>
+			</div>
+			<div ng-controller="revenueTable">
+			  <tableandgraph></tableandgraph>
+			</div>
+			<!-- <div class="col-md-12 col-xs-12 col-sm-12 top-buffer">
+			  <personaldetails></personaldetails>
+			</div> -->
+	</div>
+		<script src="JS/angular.min.js"></script>
+		<script src="JS/canvasjs.min.js"></script>
+		<script src="JS/novoCloud.js"></script>
+		<script src="JS/novoCloudDirectives.js"></script>
+  </body>
+</html>

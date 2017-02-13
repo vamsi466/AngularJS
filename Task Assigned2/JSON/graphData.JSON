@@ -1,0 +1,9 @@
+{
+  "Data": [
+				{  "y": 46615.06, "indexlabel": "Harvest Cost" },
+				{  "y": 2740.00, "indexlabel": "Transport Cost" },
+				{  "y": 3519.75, "indexlabel": "Cooling Cost" },
+				{  "y": 5658.75, "indexlabel": "Packing Cost"},
+				{  "y": 20576.00, "indexlabel": "Growing Cost" }
+      ]
+}

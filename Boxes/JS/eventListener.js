@@ -6,13 +6,17 @@
     //define controller and inject ajaxcall service as dependency.
     .controller('eventListenerCtrl',['$scope',function($scope){
     
-          $scope.Boxes = [1,2,3,4,5,6,7,8,9]
+        $scope.Boxes = [1,2,3,4,5,6,7,8,9]
 
+        var selectedBoxIndex =  Math.floor(Math.random() * $scope.Boxes.length);
+        $scope.selectedBox = parseInt(selectedBoxIndex);
+        console.log($scope.selectedBox)
 
           $scope.navigatorFunction = function(index){
                 $scope.selectedBox = index;
                 console.log($scope.selectedBox)
          }
+        
     }])
 
 
@@ -20,8 +24,10 @@
     .directive('navigator',['$document',function($document){
     return{
         restrict:'A',
+       
         link:function(scope,elem,attrs,ctrl){
-            var elemFocus = false;             
+            var elemFocus = false;         
+                console.log(scope.selectedBox)
             elem.on('mouseenter',function(){
                 elemFocus = true;
                
@@ -32,6 +38,7 @@
             });
             $document.bind('keydown',function(e){
                 if(elemFocus){
+                    console.log(scope.selectedBox)
                     if(e.keyCode == 37){
                         $('.history').append("---Left");
                         if(scope.selectedBox == 0|| scope.selectedBox == 3 ||scope.selectedBox == 6){

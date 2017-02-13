@@ -1,0 +1,67 @@
+{ "Data":[
+  {
+    "typeOfCost":"Growing Cost",
+    "totalAmount":"$20,756.00",
+    "costPerCase":"$3.80",
+    "pricePerCase":"$3.80",
+    "economicAspects":
+    [{"section":  "O 13 1-4",
+     "totalcost":"$20,576.00",
+      "cost":"$3.80",
+      "price":"$3.80"
+
+    },
+    {"section":  "O 17 1-5",
+     "totalcost":"57,504.00",
+      "cost":"$6.66",
+      "price":"$6.66"
+
+    },
+    {"section":  "O 15 1-4",
+     "totalcost":"$39,712.00",
+      "cost":"$9.44",
+      "price":"$9.44"
+
+    },
+    {"section":  "O 6 11A-13",
+     "totalcost":"$60,800.00",
+      "cost":"$14.29",
+      "price":"$14.29"
+
+    },
+    {"section":  "O 5 6-7A,B,C & D",
+     "totalcost":"$31,424.00",
+      "cost":"....",
+      "price":"...."
+
+    }]
+  },
+  {
+     "typeOfCost":"Harvest Cost",
+    "totalAmount":"$46,615.00",
+    "costPerCase":"$8.61",
+    "pricePerCase":"$8.61",
+    "economicAspects":[]
+  },
+   {
+    "typeOfCost":"Transport Cost",
+    "totalAmount":"$2,740.00",
+    "costPerCase":"$0.51",
+    "pricePerCase":"$0.51",
+    "economicAspects":[]
+  },
+  {
+     "typeOfCost":"Cooling Cost",
+    "totalAmount":"$3,519.00",
+    "costPerCase":"$0.65",
+    "pricePerCase":"$0.65",
+    "economicAspects":[]
+  },{
+     "typeOfCost":"Packing Cost",
+    "totalAmount":"$5,685.00",
+    "costPerCase":"$1.05",
+    "pricePerCase":"$1.05",
+    "economicAspects":[]
+  }
+  ]
+}

@@ -1,0 +1,195 @@
+
+// @font-face {
+//     src: url("fira-sans/FiraSans-UltraItalic.ttf") format('truetype');
+//     color:black;
+// }
+
+
+body{
+    .row-no-padding {
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: hidden;
+       
+    }
+    .zero-padding{
+         padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+     [class*="col-"] {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    .home-page{
+        .nav-bar{
+            position:absolute;
+            background:transparent!important;
+            z-index:1;
+           ul{
+               list-style-type: none;
+               padding:0px!important;
+              
+               li{
+                    float:left;
+                    padding:0px 8px;
+                    font-size:12px;
+                   a{
+                        color:black;
+                        font-family: 'Kaushan Script', sans-serif;
+                        font-weight: normal!important;
+                       &:focus, &:hover {
+                           text-decoration: none!important;
+                           
+                        }
+                   }
+               }
+           }
+        }
+        height:100vh;
+        overflow: hidden;
+        img{
+           padding-left: 0 !important;
+            padding-right: 0 !important; 
+            
+        }
+        .title-text{
+            position:absolute;
+            background:transparent;
+            top:8%;
+            .text {
+                font-family: 'Kaushan Script', sans-serif;
+                letter-spacing: .1ch;
+                margin: 0;
+                margin-left:-50px;
+                line-height: 2;
+                font-size:70px;
+                transform: rotate(-20deg);
+                hr{
+                    padding:0px!important;
+                    margin:0px !important;
+                    border: 1px solid black;
+                    margin-left:-10px;
+                }
+                ul{
+                   li{ 
+                        transform: rotate(20deg);
+                        float:left;
+                        line-height: 2!important;
+                        font-size:25px!important;
+                        padding-top:10px!important;
+                        padding-left:0px;
+                        list-style-type: none;
+                        color:white!important;
+                        button{
+                            background:transparent;
+                            border:none;
+                            &:active{
+                              outline :0;
+                            }
+                            &:focus{
+                                 outline :0;
+                            }
+                        }
+                   }
+                }    
+            }
+        }
+    }
+.history-page{
+    padding-top:20px;
+    .right{
+        float:right!important;
+    }
+    .left{
+        float:left!important;
+    }
+    .contentdiv{
+        height:25%;
+        .data-div{
+            margin-top:2.5%;
+            height:90%;
+            text-align: justify!important;   
+        }
+        
+        .image-div{
+            margin-top:2.5%;
+            height:90%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media query for the max device-width of 768pixels */
+@media screen and (max-width:768px){
+    .home-page{
+        .nav-bar{
+            ul{
+                li{
+                    padding:0px 15px !important;
+                    font-size:18px!important;
+                    a{
+                         color:grey !important;
+                    }
+                }
+            }
+        }
+        .title-text{
+            top:10% !important;
+            .text{
+                letter-spacing: -.1ch;
+                margin-left:-35px!important;
+                font-size:40px!important;
+            }
+        }
+    }
+}
+
+
+
+/*Media query for the max device-width of 480pixels */
+@media screen and (max-width:480px){
+    .home-page{
+        .nav-bar{
+            ul{
+                li{
+                     padding:0px 10px!important;
+                    font-size:12px!important;
+                }
+            }
+        }
+        .title-text{
+            top:6% !important;
+            .text{
+                letter-spacing: -.1ch;
+                margin-left:-12px!important;
+                font-size:20px!important;
+            }
+        }
+    }
+}
+
+

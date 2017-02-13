@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="cardMatchingGameApp">
+	<head >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--including all the files required css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="JS/angular.min.js"></script>
+		<link rel="stylesheet" href="CSS/cardMatchingGame.css">
+		<link rel="stylesheet" href="CSS/cardFlipping.css">
+		<link rel="stylesheet" href="CSS/clock.css">
+	</head>
+  <body>
+		<div data-backdrop = 'static' data-keyboard = 'false' class="modal fade" id="startgame" role="dialog" style="padding: 15%">
+	<div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-body" style="text-align: center;background-image:url('./images/modelpic.jpg')">
+
+		 <h2>Welcome to Memory Game</h2> <br><br>
+		 <button type="button"  ng-click="start()" class="btn btn-success btn-lg"  data-dismiss="modal">Start Game</button>
+		</div>
+	 </div>
+	</div>
+ </div>
+      <div class="container-fluid " >
+        <div class="topMargin">
+        	<div class=" col-md-2 col-sm-12 col-xs-12 leftSidePanel scrollbar forcr-overflow" ng-controller="leftSidePanelCtrl">
+						<div mydrag draggable="true" ng-repeat="images in cards">
+							<div  id='left{{images.id}}' class="flip-container left">
+								<div class="flipper ">
+									<div class="front">
+										<img  class="imageDimension"  src="Images/cardFront.jpg">
+									</div>
+									<div class="back" >
+											<img class="imageDimension" ng-src="Images/{{images.picture}}" >
+									</div>
+								</div>
+							</div>
+						</div>
+          </div>
+					<div style="color:black;">Total Cards Matched {{CardsMatched}}</div>
+					<div class="clock col-md-offset-1">
+					  <div class="clock__number-wrapper">
+					    <span class="clock__section clock__section--next">
+					      <span class="clock__number js-increment-after">1</span>
+					    </span>
+					    <span class="clock__section clock__section--upper">
+					      <span class="clock__number js-increment-before">0</span>
+					    </span>
+					    <span class="clock__section clock__section--upper-back">
+					      <span class="clock__number js-increment-after">1</span>
+					    </span>
+					    <span class="clock__section clock__section--lower">
+					      <span class="clock__number js-increment-before">0</span>
+					    </span>
+					  </div>
+					</div>
+          <div ng-controller = "resultBoxCtrl" class="col-md-offset-1 col-md-6 col-sm-offset-2 col-sm-8 col-sm-8 col-xs-offset-1 col-xs-10 centerPanel" >
+            <div>
+              <div dro droppable="true" ng-class="{'newClass':isDragged}" draggable="false" class="left col-md-offset-1 col-md-3 col-sm-4 col-xs-5 centerPanelPart1">
+              </div>
+
+               <div dro droppable="true" class="right col-md-offset-4 col-md-3 col-sm-offset-4 col-sm-4 col-xs-offset-2 col-xs-5 centerPanelPart2">
+              </div>
+          	</div>
+          </div>
+          <div class=" col-md-offset-1 col-md-2 col-sm-12 col-xs-12 rightSidePanel scrollbar forcr-overflow" ng-controller="rightSidePanelCtrl">
+						<div mydrag draggable="true"  ng-repeat="images in cardsInPanel">
+							<div id='right{{images.id}}' class="flip-container right">
+								<div class="flipper ">
+									<div class="front">
+										<img  src="Images/cardFront.jpg" class="imageDimension" >
+									</div>
+									<div class="back" >
+											<img  ng-src="Images/{{images.picture}}"   class="imageDimension">
+									</div>
+								</div>
+							</div>
+						</div>
+          </div>
+        <div>
+      </div>
+
+			<div data-backdrop = 'static' data-keyboard = 'false' class="modal fade" id="youwongame" role="dialog" style="padding: 15%">
+				<div class="modal-dialog">
+				 <div class="modal-content">
+					<div class="modal-body" style="text-align: center;background-image:url('./images/modelpic.jpg')">
+					 <h2>Hurray! You Won Game</h2> <br><br>
+					</div>
+				 </div>
+				</div>
+			 </div>
+			<script src="JS/cardGame.js"></script>
+			<script src="JS/cardMatchingGameServices.js"></script>
+			<script src="JS/cardMatchingGameControllers.js"></script>
+			<script src="JS/dndDirective.js"></script>
+			<script src="JS/clock.js"></script>
+			<!-- <script src="JS/eventListener.js"></script> -->
+  </body>
+</html>
+
+
+
+ <!-- ng-controller="centerPanelCtrl" -->
+ <!-- drag draggable="true" -->

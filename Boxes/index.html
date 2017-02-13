@@ -10,14 +10,15 @@
 		<script src="JS/angular.min.js"></script>
 		<link rel="stylesheet" href="CSS/navigator.css">
 	</head>
-  <body>
-      <div class="container-fluid" ng-controller="eventListenerCtrl">
+  <body ng-controller="eventListenerCtrl" >
+      <div class="container-fluid" >
       	<div class="col-md-offset-3 col-xs-offset-2 col-sm-offset-3 text-left">
       		<h2>Come On Lets Navigate This</h2>
       	</div>
       	
-		<div class="col-md-6 col-sm-12 col-xs-12" navigator>
-			<div class="card card-block  col-md-4 col-xs-4 col-sm-4 text-center " ng-repeat='box in Boxes'  ng-class='($index == selectedBox) ? "selectedDiv" : "boxDiv"'' ng-click='navigatorFunction($index)' >
+		<div class="col-md-6 col-sm-12 col-xs-12" navigator >
+			<div class="card card-block  col-md-4 col-xs-4 col-sm-4 text-center " ng-repeat='box in Boxes'  ng-class='($index == selectedBox) ? "selectedDiv" : "boxDiv"'  
+			ng-click="navigatorFunction($index)">
 					
 						{{box}}
 					
@@ -33,3 +34,4 @@
 			<script src="JS/eventListener.js"></script>
   </body>
 </html>
+<!---->

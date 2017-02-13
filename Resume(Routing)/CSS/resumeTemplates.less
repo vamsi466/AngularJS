@@ -19,7 +19,7 @@
   font-size: 15px !important;
 }
 .borderTable{
-  border:1px solid #6f5499 !important;
+  border:2px solid white!important;
 }
 .getStartImage{
   background:url("../Images/getStartimage.jpg");
@@ -100,8 +100,9 @@
 }
 .containerHeight{
   position:absolute !important;
-  height:100% !important;
-  border:1px solid black;
+  height:715px !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
   // background-color:black;
 }
 .navbar-inverse .navbar-collapse{
@@ -110,6 +111,18 @@
 .toggle-index{
   z-index:2000;
 }
+.scrollEffect{
+    height: 700px!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 768px)  {
+  .scrollEffect{
+    height: 936px!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
 @media screen and (max-width: 480px) {
   /*.navbar-header{
     width:100% !important;
@@ -117,8 +130,14 @@
   .containerHeight{
     position:relative !important;
     height:100% !important;
+    overflow-y:hidden;
     border:1px solid white;
     border-top: none!important;
+  }
+  .scrollEffect{
+    height: 450px!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 @media only screen and (min-width:480px) and (max-width: 768px)  {
@@ -168,4 +187,8 @@
 
 .cardleft{
   margin-left: -15px !important;
+}
+.tablePosition{
+  padding:0!important;
+  margin:0!important;
 }

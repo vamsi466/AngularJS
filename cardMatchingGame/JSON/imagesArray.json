@@ -1,0 +1,45 @@
+{
+	"cards":
+	[
+		{
+			"picture": "gnani.jpg",
+			"id": 1
+		},
+		{
+			"picture": "praneeth.JPG",
+			"id": 2
+		},
+		{
+			"picture": "ragha.jpg",
+			"id": 3
+		},
+		{
+			"picture": "vaishu.jpg",
+			"id": 4
+		},
+		{
+			"picture": "varu.jpg",
+			"id": 5
+		},
+		{
+			"picture": "santu.jpg",
+			"id": 6
+		},
+		{
+			"picture": "latha.jpg",
+			"id": 7
+		},
+		{
+			"picture": "mani.jpg",
+			"id": 8
+		},
+		{
+			"picture": "nimmi.jpg",
+			"id": 9
+		},
+		{
+			"picture": "vamsi.jpg",
+			"id": 10
+		}
+	]
+}
